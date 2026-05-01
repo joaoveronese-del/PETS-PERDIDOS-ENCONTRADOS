@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+< lang="pt-BR" dir="ltr"><!--identificação da lingua padrão do site-->  
+<head>
+  <meta charset="UTF-8"><!--para o navegador entender acessentos em geral-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--configurar site responsivo-->
+  <link rel="stylesheet" href="css/estilo.css"><!--acesso a formatação do site em css-->
+  <title>Pets Perdidos/Encontrados</title><!--nome que aparece no navegador-->
+  <!-- Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+</head>
+<body>
+  <header>
+    <h1>🐾 Pets Perdidos/Encontrados</h1>
+    <nav>
+      <ul>
+        <li><a href="#cadastro">Cadastro</a></li>
+        <li><a href="#mapa">Mapa</a></li>
+        <li><a href="#feed">Feed</a></li>
+        <li><a href="#chat">Chat</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Cadastro -->
+    <section id="cadastro">
+      <h2>Cadastro de Pet</h2>
+      <form id="petForm">
+        <label>Nome do Pet:</label>
+        <input type="text" id="nomePet" required>
+
+        <label>Espécie:</label>
+        <select id="especiePet">
+          <option>Cachorro</option>
+          <option>Gato</option>
+          <option>Pássaro</option>
+          <option>Outro</option>
+        </select>
+
+        <label>Status:</label>
+        <select id="statusPet">
+          <option>Perdido</option>
+          <option>Encontrado</option>
+        </select>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+
+    <!-- Mapa -->
+    <section id="mapa">
+      <h2>Mapa de Ocorrências</h2>
+      <div id="map"></div>
+    </section>
+
+    <!-- Feed -->
+    <section id="feed">
+      <h2>Feed de Ocorrências</h2>
+      <div id="feedList"></div>
+    </section>
+
+    <!-- Chat -->
+    <section id="chat">
+      <h2>Chat Comunitário</h2>
+      <div class="chat-box" id="chatBox">
+        <div id="messages"></div>
+        <input type="text" id="chatInput" placeholder="Digite sua mensagem...">
+        <button id="sendBtn">Enviar</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Pets Perdidos/Encontrados - </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
