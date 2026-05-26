@@ -9,5 +9,6 @@ CREATE TABLE Ocorrencia (
     FOREIGN KEY (id_local) REFERENCES Localizacao(id_local)
 );
 
+
 INSERT INTO Ocorrencia (tipo, data_ocorrencia, descricao, id_animal, id_local)
 VALUES ('Perdido', '2026-05-20', 'Animal desaparecido próximo ao parque central.', 1, 1);

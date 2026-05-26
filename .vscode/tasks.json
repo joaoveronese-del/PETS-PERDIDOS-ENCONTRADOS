@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "sqlproj: Build pets_perdidos.sql",
+			"type": "process",
+			"command": "dotnet",
+			"args": [
+				"build",
+				"c:/Users/User/Documents/GitHub/pets_perdidos.sql/pets_perdidos.sql.sqlproj"
+			],
+			"problemMatcher": "$sqlproj-problem-matcher",
+			"isBackground": true,
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "Compila o pets_perdidos.sql projeto SQL"
+		}
+	]
+}
